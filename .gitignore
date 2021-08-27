@@ -1,0 +1,8 @@
+__pycache__
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Backend
+__pycache__/
