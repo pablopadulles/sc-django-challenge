@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('model', models.CharField(max_length=20)),
                 ('colors', models.CharField(blank=True, choices=[('YELLOW', 'YELLOW'), ('RED', 'RED'), ('BLACK', 'BLACK'), ('WHITE', 'WHITE')], default='BLACK', max_length=55)),
-                ('brand', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='cars.brand')),
+                ('brand', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cars.brand')),
             ],
         ),
         migrations.CreateModel(
